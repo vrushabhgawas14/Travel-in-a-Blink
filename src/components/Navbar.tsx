@@ -1,21 +1,25 @@
+import { NavFirstHalf, NavSecondHalf } from "@/constants/NavbarDetails";
+
 export default function Navbar() {
   return (
     <>
-      <div className="flex p-2 m-4 space-x-4 text-2xl">
-        <div>
-          <a href="/">Home</a>
+      <div className="flex items-center w-full text-2xl font-semibold py-10">
+        <div className="flex justify-evenly w-[38%] py-2">
+          {NavFirstHalf.map((item) => (
+            <a href={item.url} target="_blank">
+              {item.text}
+            </a>
+          ))}
         </div>
-        <div>
-          <a href="/about">About</a>
+        <div className="text-center font-bold text-4xl w-[24%]">
+          <a href="/">Travel in a Blink</a>
         </div>
-        <div>
-          <a href="/tour">Tour</a>
-        </div>
-        <div>
-          <a href="/offers">Offers</a>
-        </div>
-        <div>
-          <a href="/explore">Explore</a>
+        <div className="flex justify-evenly w-[38%] py-2">
+          {NavSecondHalf.map((item) => (
+            <a href={item.url} target="_blank">
+              {item.text}
+            </a>
+          ))}
         </div>
       </div>
     </>

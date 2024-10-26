@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Travel in a Blink",
-  description: "Travel the world in smoothly",
+  description: "Your Dream Destination is Just a Blink Away!",
 };
 
 export default function RootLayout({
