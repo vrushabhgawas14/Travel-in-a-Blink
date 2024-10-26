@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="flex items-center w-full text-2xl font-semibold py-10">
         <div className="flex justify-evenly w-[38%] py-2">
           {NavFirstHalf.map((item) => (
-            <a href={item.url} target="_blank">
+            <a key={item.id} href={item.url} target="_blank">
               {item.text}
             </a>
           ))}
@@ -16,7 +16,7 @@ export default function Navbar() {
         </div>
         <div className="flex justify-evenly w-[38%] py-2">
           {NavSecondHalf.map((item) => (
-            <a href={item.url} target="_blank">
+            <a key={item.id} href={item.url} target="_blank">
               {item.text}
             </a>
           ))}
