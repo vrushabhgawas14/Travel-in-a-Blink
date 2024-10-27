@@ -20,6 +20,10 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const resetToggle = () => {
+    setIsOpen(false);
+  };
+
   return (
     <>
       <div className="flex items-center justify-between relative w-full text-2xl font-semibold py-10 sm:p-6 sm:w-auto">
@@ -29,7 +33,7 @@ export default function Navbar() {
           }`}
         >
           {NavFirstHalf.map((item) => (
-            <a key={item.id} href={item.url}>
+            <a key={item.id} href={item.url} onClick={resetToggle}>
               {item.text}
             </a>
           ))}
