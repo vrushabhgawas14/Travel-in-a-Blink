@@ -6,8 +6,8 @@ export const NavFirstHalf = [
   },
   {
     id: 2,
-    text: "SERVICE",
-    url: "/service",
+    text: "SERVICES",
+    url: "/services",
   },
   {
     id: 3,
