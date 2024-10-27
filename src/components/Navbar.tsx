@@ -47,7 +47,7 @@ export default function Navbar() {
           }`}
         >
           {NavSecondHalf.map((item) => (
-            <a key={item.id} href={item.url}>
+            <a key={item.id} href={item.url} onClick={resetToggle}>
               {item.text}
             </a>
           ))}
