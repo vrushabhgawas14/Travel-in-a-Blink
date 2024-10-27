@@ -1,3 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;600;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 600;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.toggleNav {
+  @apply flex-col absolute top-1/2 left-1/2 -translate-x-1/2;
+  @apply space-y-4 items-center p-4 w-full bg-purple-300 bg-opacity-40;
+}
+
+.firstHalf {
+  @apply mt-8 pb-0;
+}
+
+.secondHalf {
+  @apply mt-44;
+}

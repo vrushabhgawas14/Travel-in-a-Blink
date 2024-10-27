@@ -22,8 +22,12 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex items-center justify-between w-full text-2xl font-semibold py-10 sm:p-6 sm:w-auto">
-        <div className="flex justify-evenly w-[38%] py-2 sm:hidden">
+      <div className="flex items-center justify-between relative w-full text-2xl font-semibold py-10 sm:p-6 sm:w-auto">
+        <div
+          className={`flex justify-evenly w-[38%] py-2 ${
+            isOpen ? "toggleNav firstHalf" : "sm:hidden"
+          }`}
+        >
           {NavFirstHalf.map((item) => (
             <a key={item.id} href={item.url}>
               {item.text}
@@ -33,7 +37,11 @@ export default function Navbar() {
         <div className="text-center font-bold text-4xl w-[24%] sm:text-3xl sm:w-auto">
           <a href="/">Travel in a Blink</a>
         </div>
-        <div className="flex justify-evenly w-[38%] py-2 sm:hidden">
+        <div
+          className={`flex justify-evenly w-[38%] py-2 ${
+            isOpen ? "toggleNav secondHalf" : "sm:hidden"
+          }`}
+        >
           {NavSecondHalf.map((item) => (
             <a key={item.id} href={item.url}>
               {item.text}
