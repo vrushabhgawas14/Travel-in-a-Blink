@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex items-center justify-between relative w-full text-2xl font-semibold py-10 sm:p-6 sm:w-auto">
+      <div className="flex items-center justify-between relative w-full text-2xl font-semibold py-10 z-10 sm:p-6 sm:w-auto">
         <div
           className={`flex justify-evenly w-[38%] py-2 ${
             isOpen ? "toggleNav firstHalf" : "sm:hidden"
