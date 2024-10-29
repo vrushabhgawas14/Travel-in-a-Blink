@@ -11,29 +11,18 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   let hamburger = hamburgerMenu.bar;
 
-  if (isOpen) {
-    hamburger = hamburgerMenu.cross;
-  } else {
-    hamburger = hamburgerMenu.bar;
-  }
-  const dropDown = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const resetToggle = () => {
-    setIsOpen(false);
-  };
+  hamburger = isOpen ? hamburgerMenu.cross : hamburgerMenu.bar;
 
   return (
     <>
-      <div className="flex items-center justify-between relative w-full text-2xl font-semibold py-10 z-10 sm:p-6 sm:w-auto">
+      <div className="flex items-center justify-between fixed top-0 w-full text-2xl font-semibold py-10 z-10 sm:p-6">
         <div
           className={`flex justify-evenly w-[38%] py-2 ${
             isOpen ? "toggleNav firstHalf" : "sm:hidden"
           }`}
         >
           {NavFirstHalf.map((item) => (
-            <a key={item.id} href={item.url} onClick={resetToggle}>
+            <a key={item.id} href={item.url} onClick={() => setIsOpen(false)}>
               {item.text}
             </a>
           ))}
@@ -47,13 +36,13 @@ export default function Navbar() {
           }`}
         >
           {NavSecondHalf.map((item) => (
-            <a key={item.id} href={item.url} onClick={resetToggle}>
+            <a key={item.id} href={item.url} onClick={() => setIsOpen(false)}>
               {item.text}
             </a>
           ))}
         </div>
         <div className="hidden sm:block sm:w-auto">
-          <button className="w-6 h-6" onClick={dropDown}>
+          <button className="w-6 h-6" onClick={() => setIsOpen(!isOpen)}>
             {hamburger}
           </button>
         </div>
