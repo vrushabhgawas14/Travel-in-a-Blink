@@ -15,19 +15,24 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex items-center justify-between fixed top-0 w-full text-2xl font-semibold py-10 z-10 sm:p-6">
+      <div className="flex items-center justify-between fixed top-0 w-full text-lg sm:text-2xl font-semibold py-10 z-10 sm:p-6">
         <div
           className={`flex justify-evenly w-[38%] py-2 ${
             isOpen ? "toggleNav firstHalf" : "sm:hidden"
           }`}
         >
           {NavFirstHalf.map((item) => (
-            <a key={item.id} href={item.url} onClick={() => setIsOpen(false)}>
+            <a
+              key={item.id}
+              href={item.url}
+              onClick={() => setIsOpen(false)}
+              className="border-2 border-transparent hover:border-b-slate-900 sm:border-none"
+            >
               {item.text}
             </a>
           ))}
         </div>
-        <div className="text-center font-bold text-4xl w-[24%] sm:text-3xl sm:w-auto">
+        <div className="text-center font-bold text-4xl w-[24%] border-y-slate-900 border-y-2 border-x-0 rounded-tr-3xl rounded-bl-3xl pt-2 px-4 sm:text-3xl sm:w-auto">
           <a href="/">Travel in a Blink</a>
         </div>
         <div
@@ -36,7 +41,12 @@ export default function Navbar() {
           }`}
         >
           {NavSecondHalf.map((item) => (
-            <a key={item.id} href={item.url} onClick={() => setIsOpen(false)}>
+            <a
+              key={item.id}
+              href={item.url}
+              onClick={() => setIsOpen(false)}
+              className="border-2 border-transparent hover:border-b-slate-900 sm:border-none"
+            >
               {item.text}
             </a>
           ))}
