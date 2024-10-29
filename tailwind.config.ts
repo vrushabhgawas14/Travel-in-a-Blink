@@ -9,8 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        // For borders
+        Border: {
+          slate: "#0f172a", // Slate-900
+        },
       },
       screens: {
         sm: { max: "900px" },

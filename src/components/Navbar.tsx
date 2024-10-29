@@ -26,13 +26,13 @@ export default function Navbar() {
               key={item.id}
               href={item.url}
               onClick={() => setIsOpen(false)}
-              className="border-2 border-transparent hover:border-b-slate-900 sm:border-none"
+              className="border-2 border-transparent hover:border-b-Border-slate sm:border-none"
             >
               {item.text}
             </a>
           ))}
         </div>
-        <div className="text-center font-bold text-4xl w-[24%] border-y-slate-900 border-y-2 border-x-0 rounded-tr-3xl rounded-bl-3xl pt-2 px-4 sm:text-3xl sm:w-auto">
+        <div className="text-center font-bold text-4xl w-[24%] border-y-Border-slate border-y-2 border-x-0 rounded-tr-3xl rounded-bl-3xl pt-2 px-4 sm:text-3xl sm:w-auto">
           <a href="/">Travel in a Blink</a>
         </div>
         <div
@@ -45,7 +45,7 @@ export default function Navbar() {
               key={item.id}
               href={item.url}
               onClick={() => setIsOpen(false)}
-              className="border-2 border-transparent hover:border-b-slate-900 sm:border-none"
+              className="border-2 border-transparent hover:border-b-Border-slate sm:border-none"
             >
               {item.text}
             </a>
