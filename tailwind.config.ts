@@ -11,7 +11,8 @@ const config: Config = {
       colors: {
         // For borders
         Border: {
-          slate: "#0f172a", // Slate-900
+          // slate: "#0f172a", // Slate-900
+          slate: "#ffffff", // White
         },
       },
       screens: {
