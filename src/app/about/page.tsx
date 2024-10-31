@@ -13,7 +13,7 @@ export default function About() {
             <source src="assets/about.mp4" type="video/mp4" />
           </video>
           <div className="text-center px-4 w-full absolute top-1/2 left-1/2 -translate-x-1/2">
-            <div className="text-4xl sm:text-2xl">About</div>
+            <div className="text-4xl sm:text-2xl">Who we are and are Team?</div>
           </div>
         </div>
         <div className="pt-0 bg-red-500">I am again something new</div>

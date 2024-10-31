@@ -13,7 +13,7 @@ export default function Services() {
             <source src="assets/service.mp4" type="video/mp4" />
           </video>
           <div className="text-center px-4 w-full absolute top-1/2 left-1/2 -translate-x-1/2">
-            <div className="text-4xl sm:text-2xl">Services</div>
+            <div className="text-4xl sm:text-2xl">What we offer?</div>
           </div>
         </div>
         <div className="pt-0 bg-red-500">I am again something new</div>
