@@ -17,7 +17,7 @@ html {
 
 .toggleNav {
   @apply flex-col absolute top-1/2 left-1/2 -translate-x-1/2;
-  @apply space-y-4 items-center p-4 w-full bg-sky-200 bg-opacity-40;
+  @apply space-y-4 items-center p-8 w-full bg-purple-950 bg-opacity-80;
 }
 
 .firstHalf {
@@ -25,5 +25,5 @@ html {
 }
 
 .secondHalf {
-  @apply mt-44 rounded-bl-full;
+  @apply mt-48 pt-4 rounded-bl-full;
 }

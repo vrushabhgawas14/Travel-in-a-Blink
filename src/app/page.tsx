@@ -12,7 +12,7 @@ export default function Home() {
           >
             <source src="assets/home.mp4" type="video/mp4" />
           </video>
-          <div className="text-center space-y-4 px-4 w-full absolute top-1/2 left-1/2 -translate-x-1/2">
+          <div className="text-center text-white space-y-4 px-4 w-full absolute top-1/2 left-1/2 -translate-x-1/2">
             <div className="text-3xl sm:text-2xl">
               Your Dream Destination is Just a Blink Away!
             </div>
@@ -26,12 +26,12 @@ export default function Home() {
           <div className="text-xl text-center leading-8 w-[60%] sm:w-[80%]">
             We believe in creating journeys that are as unique as you are. Our
             passionate, knowledgeable travel specialists are here to help you
-            make every trip an unforgettable experience, whether you're
+            make every trip an unforgettable experience, whether you&apos;re
             venturing out for personal discovery, adventure, or business. When
             you travel with us, your journey unfolds with care, precision, and a
             touch of the extraordinary—all just a blink away.
           </div>
-          <div className="italic text-2xl opacity-40">
+          <div className="italic text-2xl opacity-40 tracking-wide">
             Experience Expand Explore
           </div>
           <a
