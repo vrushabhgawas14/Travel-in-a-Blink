@@ -17,11 +17,11 @@ html {
 
 .toggleNav {
   @apply flex-col absolute top-1/2 left-1/2 -translate-x-1/2;
-  @apply space-y-4 items-center p-8 w-full bg-purple-950 bg-opacity-80;
+  @apply space-y-4 items-center p-4 w-full bg-purple-950 bg-opacity-80;
 }
 
 .firstHalf {
-  @apply mt-8 pb-0 rounded-tr-full;
+  @apply mt-12 pb-0 rounded-tr-full;
 }
 
 .secondHalf {
