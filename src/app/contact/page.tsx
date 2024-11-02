@@ -12,7 +12,7 @@ export default function Contact() {
           >
             <source src="assets/contact.mp4" type="video/mp4" />
           </video>
-          <div className="text-center px-4 w-full absolute top-1/2 left-1/2 -translate-x-1/2">
+          <div className="text-center text-white px-4 w-full absolute top-1/2 left-1/2 -translate-x-1/2">
             <div className="text-4xl sm:text-2xl">Contact Us</div>
           </div>
         </div>
