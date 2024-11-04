@@ -2,10 +2,10 @@ type CardDetails = {
   title: string;
   image: string;
   url: string;
-  description: string;
+  //   description: string;
 };
 
-export default function Card({ title, image, url, description }: CardDetails) {
+export default function Card({ title, image, url }: CardDetails) {
   return (
     <>
       <div className="pt-4 pb-10 px-2 m-4 h-[60vh] bg-purple-950 bg-opacity-95 rounded-xl">

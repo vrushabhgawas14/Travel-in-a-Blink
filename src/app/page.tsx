@@ -58,7 +58,7 @@ export default function Home() {
                 title={item.title}
                 image={item.image}
                 url={item.url}
-                description={item.description}
+                // description={item.description}
               />
             ))}
           </div>
