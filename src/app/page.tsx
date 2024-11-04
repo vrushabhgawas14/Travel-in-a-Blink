@@ -1,3 +1,6 @@
+import Card from "@/components/Card";
+import { TripType } from "@/constants/PlansDetails";
+
 export default function Home() {
   return (
     <>
@@ -19,6 +22,7 @@ export default function Home() {
             <div className="text-xl">Discover. Book. Travel - in a Blink!</div>
           </div>
         </div>
+        {/* Short Welcome Msg */}
         <div className="flex flex-col items-center space-y-10 w-full py-28 bg-violet-300">
           <div className="text-5xl sm:text-3xl sm:px-10 text-center">
             Welcome to Travel in a Blink
@@ -41,7 +45,24 @@ export default function Home() {
             Learn More
           </a>
         </div>
-        <div className="pt-10 bg-yellow-400">Testing 2</div>
+        {/* Our Plans */}
+        <div className="flex flex-col items-center space-y-10 w-full py-28 bg-violet-200">
+          <div className="text-5xl sm:text-3xl sm:px-10 text-center">
+            <div>Our Plans</div>
+            <div className="text-xl sm:text-lg">The kind of travel</div>
+          </div>
+          <div className="flex flex-wrap items-center justify-center p-4 h-auto w-full sm:flex-col">
+            {TripType.map((item) => (
+              <Card
+                key={item.id}
+                title={item.title}
+                image={item.image}
+                url={item.url}
+                description={item.description}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );

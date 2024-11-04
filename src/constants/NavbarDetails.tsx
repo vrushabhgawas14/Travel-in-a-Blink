@@ -19,8 +19,8 @@ export const NavFirstHalf = [
 export const NavSecondHalf = [
   {
     id: 4,
-    text: "BLOG",
-    url: "/blog",
+    text: "REVIEWS",
+    url: "/reviews",
   },
   {
     id: 5,
