@@ -15,7 +15,7 @@ export default function Card({ title, image, url, description }: CardDetails) {
             alt="Family"
             className="w-72 h-full object-cover"
           ></img>
-          <div className="absolute top-0 pt-10 px-4 text-xl text-center text-white bg-black bg-opacity-50 h-full opacity-0 hover:opacity-100">
+          <div className="absolute top-0 pt-10 px-4 text-xl text-center text-white bg-black bg-opacity-50 h-full opacity-0 hover:opacity-100 ease-in duration-200">
             {description}
           </div>
         </a>

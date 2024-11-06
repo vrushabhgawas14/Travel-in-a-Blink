@@ -63,6 +63,30 @@ export default function Home() {
             ))}
           </div>
         </div>
+        {/* Reviews */}
+        <div className="relative">
+          <img
+            src="/assets/images/reviews.jpg"
+            alt="Reviews"
+            className="w-full h-[90vh] sm:h-[80vh]"
+          />
+          <div className="absolute top-4 w-full text-center text-5xl sm:text-3xl sm:px-10">
+            Reviews
+          </div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-violet-300 rounded-3xl flex flex-col items-center space-y-4 pt-10 w-[80vw] h-[60vh] sm:h-[50vh] sm:px-5">
+            <div className="text-3xl sm:text-2xl text-center font-semibold">
+              See What Others Say About Us!
+            </div>
+            <div>Slider</div>
+            <div className="text-center">
+              Rated 4.8 / 5 based on{" "}
+              <a href="/reviews" target="_blank" className="underline">
+                460 reviews
+              </a>
+              . One of our favourite Reviews.
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
