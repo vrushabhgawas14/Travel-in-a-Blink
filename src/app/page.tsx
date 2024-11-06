@@ -1,5 +1,7 @@
 import Card from "@/components/Card";
+import { Forms } from "@/constants/FormsDetails";
 import { TripType } from "@/constants/PlansDetails";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -65,8 +67,13 @@ export default function Home() {
         </div>
         {/* Reviews */}
         <div className="relative">
-          <img
+          <Image
             src="/assets/images/reviews.jpg"
+            width="0"
+            height="0"
+            sizes="100vw"
+            loading="lazy"
+            quality={70}
             alt="Reviews"
             className="w-full h-[90vh] sm:h-[80vh]"
           />
@@ -81,11 +88,35 @@ export default function Home() {
             <div className="text-center">
               Rated 4.8 / 5 based on{" "}
               <a href="/reviews" target="_blank" className="underline">
-                460 reviews
+                460 reviews.
               </a>
-              . One of our favourite Reviews.
             </div>
           </div>
+        </div>
+        {/* Need Anything? */}
+        <div className="flex flex-col items-center space-y-10 w-full py-28 bg-violet-200">
+          <div className="text-5xl sm:text-3xl sm:px-10 text-center">
+            <div>Need Anything?</div>
+            <div className="text-xl sm:text-lg">
+              Access our &quot;How we work&quot; guide + Subscribe!
+            </div>
+          </div>
+          <form className="flex sm:flex-col">
+            {Forms.map((item) => (
+              <input
+                key={item.key}
+                type={item.type}
+                placeholder={item.placeholder}
+                id={item.id}
+                className="p-3 m-2 rounded-xl text-black outline-none"
+              />
+            ))}
+            <input
+              type="submit"
+              value="Subscribe"
+              className="p-3 m-2 leading-tight tracking-widest bg-purple-950 rounded-xl text-gray-100 hover:text-gray-300 cursor-pointer"
+            />
+          </form>
         </div>
       </div>
     </>
