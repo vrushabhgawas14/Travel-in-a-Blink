@@ -9,11 +9,14 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <div id="footer" className="flex flex-col bg-violet-400 text-black">
+      <div
+        id="footer"
+        className="flex flex-col bg-violet-400 text-black sm:pt-20"
+      >
         {/* Actual Footer */}
         <div className="flex justify-between m-10 sm:flex-col ">
           {/* Left Side */}
-          <div className="p-4 space-y-4">
+          <div className="p-4 space-y-4 text-center">
             <a href="/" className="text-4xl sm:text-3xl">
               Travel In A Blink
             </a>
@@ -36,7 +39,7 @@ export default function Footer() {
             </div>
           </div>
           {/* Right Side */}
-          <div className="flex sm:flex-wrap items-start justify-evenly sm:justify-between lg:w-[60%] sm:mt-10">
+          <div className="flex sm:flex-wrap items-start justify-evenly sm:justify-between lg:w-[60%] md:w-[50%] sm:mt-10">
             <div>
               <h1 className="text-3xl py-4">Learn</h1>
               {LearnColumn.map((item) => (

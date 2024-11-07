@@ -10,7 +10,7 @@ export default function About() {
             loop
             className="absolute top-0 -z-10 w-full h-full object-cover"
           >
-            <source src="assets/about.mp4" type="video/mp4" />
+            <source src="assets/videos/about.mp4" type="video/mp4" />
           </video>
           <div className="text-center text-white px-4 w-full absolute top-1/2 left-1/2 -translate-x-1/2">
             <div className="text-4xl sm:text-2xl">Who we are and are Team?</div>

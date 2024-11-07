@@ -15,7 +15,7 @@ export default function Home() {
             loop
             className="absolute top-0 -z-10 w-full h-full object-cover"
           >
-            <source src="assets/home.mp4" type="video/mp4" />
+            <source src="assets/videos/home.mp4" type="video/mp4" />
           </video>
           <div className="text-center text-white space-y-4 px-4 w-full absolute top-1/2 left-1/2 -translate-x-1/2">
             <div className="text-3xl sm:text-2xl">
@@ -75,7 +75,7 @@ export default function Home() {
             loading="lazy"
             quality={70}
             alt="Reviews"
-            className="w-full h-[90vh] sm:h-[80vh]"
+            className="w-full h-[90vh] md:h-[70vh] sm:h-[80vh]"
           />
           <div className="absolute top-4 w-full text-center text-5xl sm:text-3xl sm:px-10">
             Reviews
@@ -108,7 +108,7 @@ export default function Home() {
                 type={item.type}
                 placeholder={item.placeholder}
                 id={item.id}
-                className="p-3 m-2 rounded-xl text-black outline-none"
+                className="p-3 m-2 rounded-xl w-64 md:w-52 text-black outline-none"
               />
             ))}
             <input

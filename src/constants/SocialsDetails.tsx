@@ -24,12 +24,12 @@ export const Socials = [
 export const PersonalSocials = [
   {
     key: 1,
-    url: "http://github.com/vrushabhgawas14/",
+    url: "https://github.com/vrushabhgawas14/",
     text: "Github",
   },
   {
     key: 2,
-    url: "http://linkedin.com/in/vrushabhgawas/",
+    url: "https://linkedin.com/in/vrushabhgawas/",
     text: "LinkedIn",
   },
 ];
