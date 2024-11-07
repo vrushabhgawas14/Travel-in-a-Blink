@@ -33,7 +33,7 @@ export default function Navbar() {
           }`}
       >
         <div
-          className={`flex justify-evenly w-[38%] py-2 ${
+          className={`flex items-center justify-evenly w-[38%] py-2 ${
             isOpen ? "toggleNav firstHalf" : "sm:hidden"
           }`}
         >
@@ -54,7 +54,7 @@ export default function Navbar() {
         </div>
 
         <div
-          className={`flex justify-evenly w-[38%] py-2 ${
+          className={`flex items-center justify-evenly w-[38%] py-2 ${
             isOpen ? "toggleNav secondHalf" : "sm:hidden"
           }`}
         >
@@ -68,6 +68,12 @@ export default function Navbar() {
               {item.text}
             </a>
           ))}
+
+          <div>
+            <button className="bg-violet-300 px-4 py-1 text-xl text-purple-950 border-2 border-violet-900 rounded-xl ease-in duration-200 hover:bg-violet-200">
+              Login
+            </button>
+          </div>
         </div>
 
         <div className="hidden sm:block sm:w-auto">
