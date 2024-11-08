@@ -6,9 +6,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div>
+      <main>
         {/* Video Goes Here! */}
-        <div className="h-screen overflow-hidden">
+        <section className="h-screen overflow-hidden">
           <video
             autoPlay
             muted
@@ -23,13 +23,13 @@ export default function Home() {
             </div>
             <div className="text-xl">Discover. Book. Travel - in a Blink!</div>
           </div>
-        </div>
+        </section>
         {/* Short Welcome Msg */}
-        <div className="flex flex-col items-center space-y-10 w-full py-28 bg-violet-300">
+        <section className="flex flex-col items-center space-y-10 w-full py-28 bg-violet-300">
           <div className="text-5xl sm:text-3xl sm:px-10 text-center">
             Welcome to Travel in a Blink
           </div>
-          <div className="text-xl text-center leading-8 w-[60%] sm:w-[80%]">
+          <div className="text-xl text-center leading-8 w-[60%] md:w-[80%] sm:w-[80%]">
             We believe in creating journeys that are as unique as you are. Our
             passionate, knowledgeable travel specialists are here to help you
             make every trip an unforgettable experience, whether you&apos;re
@@ -46,9 +46,9 @@ export default function Home() {
           >
             Learn More
           </a>
-        </div>
+        </section>
         {/* Our Plans */}
-        <div className="flex flex-col items-center space-y-10 w-full py-28 bg-violet-200">
+        <section className="flex flex-col items-center space-y-10 w-full py-28 bg-violet-200">
           <div className="text-5xl sm:text-3xl sm:px-10 text-center">
             <div>Our Plans</div>
             <div className="text-xl sm:text-lg">The kind of travel</div>
@@ -64,9 +64,9 @@ export default function Home() {
               />
             ))}
           </div>
-        </div>
+        </section>
         {/* Reviews */}
-        <div className="relative">
+        <section className="relative">
           <Image
             src="/assets/images/reviews.jpg"
             width="0"
@@ -92,9 +92,9 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </div>
+        </section>
         {/* Need Anything? */}
-        <div className="flex flex-col items-center space-y-10 w-full py-28 bg-violet-200">
+        <section className="flex flex-col items-center space-y-10 w-full py-28 bg-violet-200">
           <div className="text-5xl sm:text-3xl sm:px-10 text-center">
             <div>Need Anything?</div>
             <div className="text-xl sm:text-lg">
@@ -117,8 +117,8 @@ export default function Home() {
               className="p-3 m-2 leading-tight tracking-widest bg-purple-950 rounded-xl text-gray-100 hover:text-gray-300 cursor-pointer"
             />
           </form>
-        </div>
-      </div>
+        </section>
+      </main>
     </>
   );
 }

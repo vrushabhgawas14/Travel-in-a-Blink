@@ -1,9 +1,9 @@
 export default function Services() {
   return (
     <>
-      <div>
+      <main>
         {/* Video Goes Here! */}
-        <div className="h-screen overflow-hidden">
+        <section className="h-screen overflow-hidden">
           <video
             autoPlay
             muted
@@ -15,10 +15,12 @@ export default function Services() {
           <div className="text-center text-white px-4 w-full absolute top-1/2 left-1/2 -translate-x-1/2">
             <div className="text-4xl sm:text-2xl">Our Services</div>
           </div>
-        </div>
-        <div className="pt-0 bg-red-500">I am again something new</div>
-        <div className="pt-10 bg-yellow-400">I am again something new</div>
-      </div>
+        </section>
+        <section className="pt-0 bg-red-500">I am again something new</section>
+        <section className="pt-10 bg-yellow-400">
+          I am again something new
+        </section>
+      </main>
     </>
   );
 }

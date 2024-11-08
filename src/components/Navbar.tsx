@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div
+      <nav
         className={`flex items-center justify-between fixed top-0 w-full text-lg sm:text-2xl font-semibold py-6 z-10 text-white sm:p-6 
           ${
             pageScrolling
@@ -81,7 +81,7 @@ export default function Navbar() {
             {hamburger}
           </button>
         </div>
-      </div>
+      </nav>
     </>
   );
 }

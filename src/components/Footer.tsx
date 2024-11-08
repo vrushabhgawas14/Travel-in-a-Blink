@@ -9,12 +9,12 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <div
+      <footer
         id="footer"
-        className="flex flex-col bg-violet-400 text-black sm:pt-20"
+        className="flex flex-col bg-violet-400 text-black sm:pt-12"
       >
         {/* Actual Footer */}
-        <div className="flex justify-between m-10 sm:flex-col ">
+        <section className="flex justify-between m-10 sm:flex-col ">
           {/* Left Side */}
           <div className="p-4 space-y-4 text-center">
             <a href="/" className="text-4xl sm:text-3xl">
@@ -79,10 +79,10 @@ export default function Footer() {
               ))}
             </div>
           </div>
-        </div>
+        </section>
 
         {/* About Me */}
-        <div className="text-center pt-4 pb-2 w-full text-sm">
+        <section className="text-center pt-4 pb-2 w-full text-sm">
           <div>
             © 2024 Developed by{" "}
             <a
@@ -107,8 +107,8 @@ export default function Footer() {
               </a>
             ))}
           </div>
-        </div>
-      </div>
+        </section>
+      </footer>
     </>
   );
 }
