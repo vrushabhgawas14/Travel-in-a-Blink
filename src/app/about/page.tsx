@@ -1,5 +1,6 @@
 import { Teams } from "@/constants/TeamDetails";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -32,12 +33,12 @@ export default function About() {
             Laboriosam voluptate soluta iusto laborum velit vitae modi totam
             ipsum sequi, exercitationem suscipit esse recusandae! Quae neque.
           </div>
-          <a
+          <Link
             href="/services"
             className="px-10 py-4 text-xl leading-tight tracking-widest bg-purple-950 text-gray-300 cursor-pointer hover:text-gray-100"
           >
             Learn More
-          </a>
+          </Link>
         </section>
         {/* Vision + Mission */}
         <section className="flex flex-col items-center space-y-8 w-full py-24 bg-violet-200">
@@ -96,12 +97,12 @@ export default function About() {
           <div className="text-5xl text-center italic w-[50%] md:w-[70%] sm:w-full sm:text-3xl sm:px-10">
             Ready to Get Away?
           </div>
-          <a
+          <Link
             href="/plans"
             className="px-10 py-4 text-xl leading-tight tracking-widest bg-purple-950 text-gray-300 cursor-pointer hover:text-gray-100 sm:text-lg sm:px-8"
           >
             Let&apos;s Plan Your Trip
-          </a>
+          </Link>
         </section>
       </main>
     </>

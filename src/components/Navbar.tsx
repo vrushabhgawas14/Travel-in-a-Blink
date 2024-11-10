@@ -5,6 +5,7 @@ import {
   NavFirstHalf,
   NavSecondHalf,
 } from "@/constants/NavbarDetails";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
@@ -38,19 +39,19 @@ export default function Navbar() {
           }`}
         >
           {NavFirstHalf.map((item) => (
-            <a
+            <Link
               key={item.id}
               href={item.url}
               onClick={() => setIsOpen(false)}
               className="border-2 border-transparent hover:border-b-Border-slate sm:border-none"
             >
               {item.text}
-            </a>
+            </Link>
           ))}
         </div>
 
         <div className="text-center font-bold text-4xl w-[24%] border-y-Border-slate border-y-2 border-x-0 rounded-tr-3xl rounded-bl-3xl pt-2 px-4 sm:text-3xl sm:w-auto">
-          <a href="/">Travel in a Blink</a>
+          <Link href="/">Travel in a Blink</Link>
         </div>
 
         <div
@@ -59,14 +60,14 @@ export default function Navbar() {
           }`}
         >
           {NavSecondHalf.map((item) => (
-            <a
+            <Link
               key={item.id}
               href={item.url}
               onClick={() => setIsOpen(false)}
               className="border-2 border-transparent hover:border-b-Border-slate sm:border-none"
             >
               {item.text}
-            </a>
+            </Link>
           ))}
 
           <div>

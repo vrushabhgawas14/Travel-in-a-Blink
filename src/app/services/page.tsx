@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Services() {
   return (
     <>
@@ -25,12 +27,12 @@ export default function Services() {
           <div className="text-5xl text-center italic w-[50%] md:w-[70%] sm:w-full sm:text-3xl sm:px-10">
             Ready to Get Away?
           </div>
-          <a
+          <Link
             href="/plans"
             className="px-10 py-4 text-xl leading-tight tracking-widest bg-purple-950 text-gray-300 cursor-pointer hover:text-gray-100 sm:text-lg sm:px-8"
           >
             Let&apos;s Plan Your Trip
-          </a>
+          </Link>
         </section>
       </main>
     </>

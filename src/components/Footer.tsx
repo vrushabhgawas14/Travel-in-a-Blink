@@ -5,6 +5,7 @@ import {
 } from "@/constants/FooterDetails";
 import { PersonalSocials, Socials } from "@/constants/SocialsDetails";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -17,12 +18,12 @@ export default function Footer() {
         <section className="flex justify-between m-10 sm:flex-col ">
           {/* Left Side */}
           <div className="p-4 space-y-4 text-center">
-            <a href="/" className="text-4xl sm:text-3xl">
+            <Link href="/" className="text-4xl sm:text-3xl">
               Travel In A Blink
-            </a>
+            </Link>
             <div className="flex items-center space-x-4 justify-center">
               {Socials.map((item) => (
-                <a key={item.key} href="#footer">
+                <Link key={item.key} href="#footer">
                   <Image
                     key={item.key}
                     src={item.svg}
@@ -30,7 +31,7 @@ export default function Footer() {
                     height={20}
                     alt="Socials"
                   />
-                </a>
+                </Link>
               ))}
             </div>
             <div className="flex flex-col underline p-4">
@@ -43,39 +44,39 @@ export default function Footer() {
             <div>
               <h1 className="text-3xl py-4">Learn</h1>
               {LearnColumn.map((item) => (
-                <a
+                <Link
                   key={item.key}
                   href={item.url}
                   className="flex flex-col py-2 text-xl underline"
                 >
                   {item.text}
-                </a>
+                </Link>
               ))}
             </div>
             {/* Explore */}
             <div>
               <h1 className="text-3xl py-4">Explore</h1>
               {ExploreColumn.map((item) => (
-                <a
+                <Link
                   key={item.key}
                   href={item.url}
                   className="flex flex-col py-2 text-xl underline"
                 >
                   {item.text}
-                </a>
+                </Link>
               ))}
             </div>
             {/* Connect */}
             <div>
               <h1 className="text-3xl py-4">Connect</h1>
               {ConnectColumn.map((item) => (
-                <a
+                <Link
                   key={item.key}
                   href={item.url}
                   className="flex flex-col py-2 text-xl underline"
                 >
                   {item.text}
-                </a>
+                </Link>
               ))}
             </div>
           </div>

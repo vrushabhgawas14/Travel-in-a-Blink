@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type CardDetails = {
   title: string;
@@ -11,7 +12,7 @@ export default function Card({ title, image, url, description }: CardDetails) {
   return (
     <>
       <div className="pt-4 pb-10 px-2 m-4 h-[60vh] bg-purple-950 bg-opacity-95 rounded-xl md:h-[40vh]">
-        <a href={url} target="_blank" className="relative">
+        <Link href={url} target="_blank" className="relative">
           <Image
             src={image}
             width="0"
@@ -25,7 +26,7 @@ export default function Card({ title, image, url, description }: CardDetails) {
           <div className="absolute top-0 pt-8 px-4 text-lg text-center text-white bg-black bg-opacity-50 h-full opacity-0 hover:opacity-100 ease-in duration-200 overflow-hidden">
             {description}
           </div>
-        </a>
+        </Link>
         <div className="text-center p-2 text-white">{title}</div>
       </div>
     </>

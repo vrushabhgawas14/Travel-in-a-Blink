@@ -2,6 +2,7 @@ import Card from "@/components/Card";
 import { Forms } from "@/constants/FormsDetails";
 import { TripType } from "@/constants/PlansDetails";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -40,12 +41,12 @@ export default function Home() {
           <div className="italic text-2xl opacity-40 tracking-wide">
             Experience Expand Explore
           </div>
-          <a
+          <Link
             href="/about"
             className="px-10 py-4 text-xl leading-tight tracking-widest bg-purple-950 text-gray-300 cursor-pointer hover:text-gray-100"
           >
             Learn More
-          </a>
+          </Link>
         </section>
         {/* Our Plans */}
         <section className="flex flex-col items-center space-y-10 w-full py-28 bg-violet-200">
@@ -87,9 +88,9 @@ export default function Home() {
             <div>Slider</div>
             <div className="text-center">
               Rated 4.8 / 5 based on{" "}
-              <a href="/reviews" target="_blank" className="underline">
+              <Link href="/reviews" target="_blank" className="underline">
                 460 reviews.
-              </a>
+              </Link>
             </div>
           </div>
         </section>
