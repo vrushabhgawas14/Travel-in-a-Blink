@@ -1,4 +1,4 @@
-import ReadyToGetAway from "@/components/ReadyToGetAway";
+import EndTemplate from "@/components/EndTemplate";
 import { Teams } from "@/constants/TeamDetails";
 import Image from "next/image";
 import Link from "next/link";
@@ -94,7 +94,11 @@ export default function About() {
           </div>
         </section>
         {/* Lets Plan Your Trip */}
-        <ReadyToGetAway />
+        <EndTemplate
+          title="Ready to Get Away?"
+          url="/plans"
+          urlText="Let's Plan Your Trip"
+        />
       </main>
     </>
   );

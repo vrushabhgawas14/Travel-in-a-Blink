@@ -1,5 +1,5 @@
 import NeedAnything from "@/components/NeedAnything";
-import ReadyToGetAway from "@/components/ReadyToGetAway";
+import EndTemplate from "@/components/EndTemplate";
 
 export default function Services() {
   return (
@@ -74,7 +74,11 @@ export default function Services() {
         {/* Need Anything? */}
         <NeedAnything />
         {/* Lets Plan Your Trip */}
-        <ReadyToGetAway />
+        <EndTemplate
+          title="Ready to Get Away?"
+          url="/plans"
+          urlText="Let's Plan Your Trip"
+        />
       </main>
     </>
   );

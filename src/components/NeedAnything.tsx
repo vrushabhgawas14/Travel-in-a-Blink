@@ -1,8 +1,8 @@
 import { Forms } from "@/constants/FormsDetails";
 
-interface Props {
+type Props = {
   isWhite?: boolean;
-}
+};
 
 export default function NeedAnything({ isWhite }: Props) {
   return (

@@ -55,7 +55,7 @@ export default function Home() {
             <div className="text-xl sm:text-lg">The kind of travel</div>
           </div>
           <div className="flex flex-wrap items-center justify-center p-4 h-auto w-full sm:flex-col">
-            {TripType.map((item) => (
+            {TripType.slice(0, 4).map((item) => (
               <Card
                 key={item.id}
                 title={item.title}
