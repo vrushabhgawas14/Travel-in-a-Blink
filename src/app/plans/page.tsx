@@ -2,7 +2,11 @@ import Card from "@/components/Card";
 import EndTemplate from "@/components/EndTemplate";
 import { TripType } from "@/constants/PlansDetails";
 
-export default function TravelPlansw() {
+export const metadata = {
+  title: "Plans",
+};
+
+export default function TravelPlans() {
   return (
     <>
       <main>

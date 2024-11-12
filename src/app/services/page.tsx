@@ -1,6 +1,10 @@
 import NeedAnything from "@/components/NeedAnything";
 import EndTemplate from "@/components/EndTemplate";
 
+export const metadata = {
+  title: "Services",
+};
+
 export default function Services() {
   return (
     <>

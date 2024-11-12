@@ -3,6 +3,10 @@ import { Teams } from "@/constants/TeamDetails";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "About",
+};
+
 export default function About() {
   return (
     <>

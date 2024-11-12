@@ -5,6 +5,7 @@ assets/
 public/
 .env.development
 LICENSE
+WhyThisProject.md
 README.md
 package.json
 package-lock.json
