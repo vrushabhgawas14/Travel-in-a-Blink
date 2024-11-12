@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Travel in a Blink",
-    description: "Dream Destination is Just a Blink Away!",
-    images: ["/assets/images/cover-compress.jpg"],
+    description: "Your Dream Destination is Just a Blink Away!",
+    images: ["/assets/images/cover-landscape-compress.jpg"],
   },
 
   keywords: [
