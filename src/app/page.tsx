@@ -1,5 +1,6 @@
 import Card from "@/components/Card";
 import NeedAnything from "@/components/NeedAnything";
+import Video from "@/components/VideoSection";
 import { TripType } from "@/constants/PlansDetails";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,22 +10,11 @@ export default function Home() {
     <>
       <main>
         {/* Video Goes Here! */}
-        <section className="h-screen overflow-hidden">
-          <video
-            autoPlay
-            muted
-            loop
-            className="absolute top-0 -z-10 w-full h-full object-cover"
-          >
-            <source src="assets/videos/home.mp4" type="video/mp4" />
-          </video>
-          <div className="text-center text-white space-y-4 px-4 w-full absolute top-1/2 left-1/2 -translate-x-1/2">
-            <div className="text-3xl sm:text-2xl">
-              Your Dream Destination is Just a Blink Away!
-            </div>
-            <div className="text-xl">Discover. Book. Travel - in a Blink!</div>
-          </div>
-        </section>
+        <Video
+          src="assets/videos/home.mp4"
+          title="Your Dream Destination is Just a Blink Away!"
+          subTitle="Discover. Book. Travel - in a Blink!"
+        />
         {/* Short Welcome Msg */}
         <section className="flex flex-col items-center space-y-10 w-full py-28 bg-violet-300">
           <div className="text-5xl sm:text-3xl sm:px-10 text-center">

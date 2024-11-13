@@ -1,5 +1,6 @@
 import NeedAnything from "@/components/NeedAnything";
 import EndTemplate from "@/components/EndTemplate";
+import Video from "@/components/VideoSection";
 
 export const metadata = {
   title: "Services",
@@ -10,19 +11,7 @@ export default function Services() {
     <>
       <main>
         {/* Video Goes Here! */}
-        <section className="h-screen overflow-hidden">
-          <video
-            autoPlay
-            muted
-            loop
-            className="absolute top-0 -z-10 w-full h-full object-cover"
-          >
-            <source src="assets/videos/service.mp4" type="video/mp4" />
-          </video>
-          <div className="text-center text-white px-4 w-full absolute top-1/2 left-1/2 -translate-x-1/2">
-            <div className="text-4xl sm:text-2xl">Services</div>
-          </div>
-        </section>
+        <Video src="assets/videos/service.mp4" title="Services" />
         {/* Our Services */}
         <section className="flex flex-col items-center space-y-8 w-full py-24 bg-violet-300">
           <div className="text-5xl text-center w-[50%] md:w-[70%] sm:w-[95%] sm:text-3xl sm:px-10">
