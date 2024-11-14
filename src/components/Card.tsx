@@ -45,6 +45,7 @@ export default function Card({
         <div className={`text-center ${isPlansPage ? "block" : "hidden"}`}>
           <Link
             href={url}
+            aria-label="Plans"
             className="bg-purple-950 px-4 text-lg text-white border-2 border-violet-300 rounded-2xl ease-in duration-200 hover:bg-purple-900 sm:text-base"
           >
             Learn More

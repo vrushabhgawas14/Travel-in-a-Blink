@@ -83,7 +83,7 @@ export default function Footer() {
         </section>
 
         {/* About Me */}
-        <section className="text-center pt-4 pb-2 w-full text-sm">
+        <section className="text-center pt-4 pb-2 w-full space-y-2 text-sm">
           <div>
             © 2024 Developed by{" "}
             <a
@@ -95,7 +95,7 @@ export default function Footer() {
             </a>
             .
           </div>
-          <div className="space-x-2 flex items-center justify-center">
+          <div className="space-x-4 flex items-center justify-center">
             {PersonalSocials.map((item) => (
               <a
                 key={item.key}
