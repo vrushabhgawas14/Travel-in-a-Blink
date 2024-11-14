@@ -1,8 +1,14 @@
-import Video from "@/components/VideoSection";
+import dynamic from "next/dynamic";
+import Loading from "../loading";
 
 export const metadata = {
   title: "Contact",
 };
+
+const Video = dynamic(() => import("@/components/VideoSection"), {
+  loading: () => <Loading />,
+  ssr: false, // load on the client side
+});
 
 export default function Contact() {
   return (
