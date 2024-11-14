@@ -35,6 +35,7 @@ export default function About() {
           </div>
           <Link
             href="/services"
+            aria-label="Services"
             className="px-10 py-4 text-xl leading-tight tracking-widest bg-purple-950 text-gray-300 cursor-pointer hover:text-gray-100"
           >
             Learn More

@@ -33,6 +33,7 @@ export default function Home() {
           </div>
           <Link
             href="/about"
+            aria-label="About Us"
             className="px-10 py-4 text-xl leading-tight tracking-widest bg-purple-950 text-gray-300 cursor-pointer hover:text-gray-100"
           >
             Learn More
@@ -59,7 +60,7 @@ export default function Home() {
         {/* Reviews */}
         <section className="relative">
           <Image
-            src="/assets/images/reviews.jpg"
+            src="/assets/images/reviews1.jpg"
             width="0"
             height="0"
             sizes="100vw"
