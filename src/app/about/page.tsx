@@ -1,12 +1,18 @@
 import EndTemplate from "@/components/EndTemplate";
-import Video from "@/components/VideoSection";
 import { Teams } from "@/constants/TeamDetails";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
+import Loading from "../loading";
 
 export const metadata = {
   title: "About",
 };
+
+const Video = dynamic(() => import("@/components/VideoSection"), {
+  loading: () => <Loading />,
+  ssr: false, // load on the client side
+});
 
 export default function About() {
   return (
