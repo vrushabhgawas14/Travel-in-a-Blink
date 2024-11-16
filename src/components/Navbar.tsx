@@ -78,7 +78,11 @@ export default function Navbar() {
         </div>
 
         <div className="hidden sm:block sm:w-auto">
-          <button className="w-6 h-6" onClick={() => setIsOpen(!isOpen)}>
+          <button
+            className="w-6 h-6"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Hamburger Menu"
+          >
             {hamburger}
           </button>
         </div>

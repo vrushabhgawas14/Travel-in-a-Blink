@@ -20,9 +20,12 @@ export const metadata: Metadata = {
 
   keywords: [
     "Travel in a Blink",
+    "Travel in a blink",
+    "Travel in a blink website",
     "Travelling website",
     "Travel Agency",
     "Travel Agency Website",
+    "Trip",
   ],
 
   verification: {
