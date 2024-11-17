@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     "Travel Agency",
     "Travel Agency Website",
     "Trip",
+	"Vrushabh Gawas",
   ],
 
   verification: {
