@@ -16,6 +16,18 @@ html {
   scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-violet-400;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-purple-950 rounded-xl;
+}
+
 .toggleNav {
   @apply flex-col absolute top-1/2 left-1/2 -translate-x-1/2;
   @apply space-y-4 items-center p-4 w-full bg-purple-950 bg-opacity-80;
@@ -27,4 +39,16 @@ html {
 
 .secondHalf {
   @apply mt-48 pt-4 rounded-bl-full;
+}
+
+#slider::-webkit-scrollbar {
+  width: 6rem;
+}
+
+#slider::-webkit-scrollbar-thumb {
+  @apply h-3 bg-violet-300;
+}
+
+#slider::-webkit-scrollbar-track {
+  @apply hidden;
 }

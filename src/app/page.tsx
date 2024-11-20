@@ -1,11 +1,25 @@
+"use client";
+
 import Card from "@/components/Card";
 import NeedAnything from "@/components/NeedAnything";
+import ReviewBox from "@/components/ReviewBox";
 import Video from "@/components/VideoSection";
 import { TripType } from "@/constants/PlansDetails";
+import { ReviewsDetails } from "@/constants/ReviewsDetails";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  const goRight = () => {
+    let slide: any = document.getElementById("slider");
+    slide.scrollLeft += 250;
+  };
+
+  const goLeft = () => {
+    let slide: any = document.getElementById("slider");
+    slide.scrollLeft -= 250;
+  };
+
   return (
     <>
       <main>
@@ -67,17 +81,52 @@ export default function Home() {
             loading="lazy"
             quality={70}
             alt="Reviews"
-            className="w-full h-[90vh] md:h-[70vh] sm:h-[80vh]"
+            className="w-full h-[90vh] md:h-[50vh] sm:h-[80vh]"
           />
           <div className="absolute top-4 w-full text-center text-5xl sm:text-3xl sm:px-10">
             Reviews
           </div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-violet-300 rounded-3xl flex flex-col items-center space-y-4 pt-10 w-[80vw] h-[60vh] sm:h-[50vh] sm:px-5">
-            <div className="text-3xl sm:text-2xl text-center font-semibold">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-purple-950 rounded-3xl flex flex-col items-center space-y-4 py-10 w-[80vw] h-auto sm:w-[85vw] sm:px-5">
+            <div className="text-3xl sm:text-2xl text-center font-semibold text-white">
               See What Others Say About Us!
             </div>
-            <div>Slider</div>
-            <div className="text-center">
+            <div className="flex items-center justify-center w-[80%] sm:w-[90%]">
+              <button onClick={goLeft}>
+                <Image
+                  src={"/assets/svg/backButton.svg"}
+                  width={0}
+                  height={0}
+                  alt="BackButton"
+                  className="min-w-8 sm:min-w-5"
+                />
+              </button>
+              <div
+                id="slider"
+                className="overflow-x-scroll scroll-smooth flex py-4 gap-x-4 border-gray-400 border-2 border-x-0 mx-10 sm:mx-4"
+              >
+                {ReviewsDetails.map((item) => (
+                  <ReviewBox
+                    key={item.key}
+                    id={item.key}
+                    star={item.star}
+                    heading={item.heading}
+                    msg={item.msg}
+                    userName={item.userName}
+                    reviewDate={item.reviewDate}
+                  />
+                ))}
+              </div>
+              <button onClick={goRight}>
+                <Image
+                  src={"/assets/svg/nextButton.svg"}
+                  width={0}
+                  height={0}
+                  alt="NextButton"
+                  className="min-w-8 sm:min-w-5"
+                />
+              </button>
+            </div>
+            <div className="text-center text-white">
               Rated 4.8 / 5 based on{" "}
               <Link href="/reviews" target="_blank" className="underline">
                 460 reviews.
