@@ -15,13 +15,17 @@ const Video = dynamic(() => import("@/components/VideoSection"), {
 
 export default function Reviews() {
   const goRight = () => {
-    let slide: any = document.getElementById("slider");
-    slide.scrollLeft += 250;
+    const slide: HTMLElement | null = document.getElementById("slider");
+    if (slide) {
+      slide.scrollLeft += 250;
+    }
   };
 
   const goLeft = () => {
-    let slide: any = document.getElementById("slider");
-    slide.scrollLeft -= 250;
+    const slide: HTMLElement | null = document.getElementById("slider");
+    if (slide) {
+      slide.scrollLeft -= 250;
+    }
   };
 
   return (

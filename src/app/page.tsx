@@ -11,13 +11,17 @@ import Link from "next/link";
 
 export default function Home() {
   const goRight = () => {
-    let slide: any = document.getElementById("slider");
-    slide.scrollLeft += 250;
+    const slide: HTMLElement | null = document.getElementById("slider");
+    if (slide) {
+      slide.scrollLeft += 250;
+    }
   };
 
   const goLeft = () => {
-    let slide: any = document.getElementById("slider");
-    slide.scrollLeft -= 250;
+    const slide: HTMLElement | null = document.getElementById("slider");
+    if (slide) {
+      slide.scrollLeft -= 250;
+    }
   };
 
   return (
