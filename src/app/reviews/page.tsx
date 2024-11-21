@@ -77,7 +77,7 @@ export default function Reviews() {
             </div>
           </div>
         </div>
-        {/* Need Aynthing */}
+        {/* Need Anything? */}
         <NeedAnything />
         {/* Drop your Review */}
         <EndTemplate
