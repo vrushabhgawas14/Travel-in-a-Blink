@@ -18,7 +18,7 @@ export default function QuestionBox({ question, answer }: Props) {
         className="py-8 space-y-4 border-t-2 border-slate-800 cursor-pointer"
       >
         <div className="flex justify-between">
-          <div>{question}</div>
+          <div className="text-start pr-4">{question}</div>
           <Image
             src={isOpen ? Minus : Plus}
             width={20}

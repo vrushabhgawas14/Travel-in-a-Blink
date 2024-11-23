@@ -38,7 +38,10 @@ export default function TravelPlans() {
           </div>
         </section>
         {/* Travel Form */}
-        <section className="flex flex-col items-center space-y-8 w-full py-24 bg-violet-300">
+        <section
+          id="TravelForm"
+          className="flex flex-col items-center space-y-8 w-full py-24 bg-violet-300"
+        >
           <div className="text-5xl text-center w-[50%] md:w-[70%] sm:w-[95%] sm:text-3xl sm:px-10">
             Form Goes Here!
           </div>
