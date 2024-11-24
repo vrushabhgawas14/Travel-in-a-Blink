@@ -21,7 +21,7 @@ export default function About() {
         {/* Video Goes Here! */}
         <Video src="assets/videos/about.mp4" title="Who we are and are Team?" />
         {/* About Us */}
-        <section className="flex flex-col items-center space-y-8 w-full py-24 bg-violet-300">
+        <section className="flex flex-col items-center space-y-8 w-full py-24 bg-violet-400">
           <div className="text-5xl text-center w-[50%] md:w-[70%] sm:w-[95%] sm:text-3xl sm:px-10">
             Your Vacation Must Be As Unique As You Are!
           </div>
@@ -63,7 +63,7 @@ export default function About() {
           </div>
         </section>
         {/* Our Team */}
-        <section className="flex flex-col items-center space-y-6 w-full py-24 bg-violet-300">
+        <section className="flex flex-col items-center space-y-6 w-full py-24 bg-violet-400">
           <div className="text-5xl text-center w-[50%] md:w-[70%] sm:w-full sm:text-3xl sm:px-10">
             Our Travel Specialists
           </div>

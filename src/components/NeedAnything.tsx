@@ -9,7 +9,7 @@ export default function NeedAnything({ isWhite }: Props) {
     <>
       <section
         className={`flex flex-col items-center space-y-10 w-full py-28 ${
-          isWhite ? "bg-violet-200" : "bg-violet-300"
+          isWhite ? "bg-violet-200" : "bg-violet-400"
         }`}
       >
         <div className="text-5xl sm:text-3xl sm:px-10 text-center">

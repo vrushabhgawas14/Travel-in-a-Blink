@@ -18,7 +18,7 @@ export default function FAQ() {
         {/* Video Goes Here! */}
         <Video src="assets/videos/faq.mp4" title="FAQ" />
         {/* Frequently Asked Questions */}
-        <section className="flex flex-col items-center space-y-8 w-full py-24 bg-violet-300">
+        <section className="flex flex-col items-center space-y-8 w-full py-24 bg-violet-400">
           <div className="text-5xl text-center w-[70%] md:w-[80%] sm:w-[95%] sm:text-3xl sm:px-10">
             Frequently Asked Questions
           </div>

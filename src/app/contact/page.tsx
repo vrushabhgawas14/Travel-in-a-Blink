@@ -80,9 +80,14 @@ export default function Contact() {
               <input type="text" id="message" required />
               <label htmlFor="message">Message</label>
             </fieldset>
-            <button className="bg-purple-950 text-white px-4 pt-2 pb-1 rounded-lg">
-              Submit
-            </button>
+            <div className="text-center pt-5">
+              <button
+                className="px-4 pt-2 pb-1 leading-tight tracking-widest
+              bg-purple-950 text-white hover:text-gray-200 rounded-lg"
+              >
+                Submit
+              </button>
+            </div>
           </form>
         </section>
         {/* Fill Travel Form */}

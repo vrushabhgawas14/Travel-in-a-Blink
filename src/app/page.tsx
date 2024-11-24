@@ -34,7 +34,7 @@ export default function Home() {
           subTitle="Discover. Book. Travel - in a Blink!"
         />
         {/* Short Welcome Msg */}
-        <section className="flex flex-col items-center space-y-10 w-full py-28 bg-violet-300">
+        <section className="flex flex-col items-center space-y-10 w-full py-28 bg-violet-400">
           <div className="text-5xl sm:text-3xl sm:px-10 text-center">
             Welcome to Travel in a Blink
           </div>
@@ -46,7 +46,7 @@ export default function Home() {
             you travel with us, your journey unfolds with care, precision, and a
             touch of the extraordinary—all just a blink away.
           </div>
-          <div className="italic text-2xl opacity-40 tracking-wide">
+          <div className="italic text-2xl opacity-60 tracking-wide">
             Experience Expand Explore
           </div>
           <Link
