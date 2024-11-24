@@ -52,3 +52,20 @@ html::-webkit-scrollbar {
 #slider::-webkit-scrollbar-track {
   @apply hidden;
 }
+
+fieldset {
+  @apply flex flex-col-reverse;
+}
+
+fieldset input {
+  @apply px-4 py-2 rounded-2xl outline-none;
+}
+
+fieldset label {
+  @apply cursor-pointer;
+}
+
+fieldset input[required] ~ label:after {
+  content: "*";
+  @apply text-red-700;
+}

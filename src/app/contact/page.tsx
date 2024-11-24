@@ -19,7 +19,7 @@ export default function Contact() {
         {/* Video Goes Here! */}
         <Video src="assets/videos/contact.mp4" title="Contact Us" />
         {/* Contact Us */}
-        <section className="flex flex-col items-center space-y-8 w-full py-24 bg-violet-300">
+        <section className="flex flex-col items-center space-y-8 w-full py-24 bg-violet-200">
           <div className="text-5xl sm:text-3xl sm:px-10 text-center">
             <div>Traveler Support + Questions</div>
             <div className="text-xl sm:text-lg mt-6">
@@ -51,6 +51,39 @@ export default function Contact() {
               <div className="text-lg font-bold">192 68 34 127</div>
             </div>
           </div>
+        </section>
+        {/* Reach out to us */}
+        <section className="flex flex-col items-center space-y-8 w-full py-24 bg-violet-400">
+          <div className="text-5xl sm:text-3xl sm:px-10 text-center">
+            Reach out to us via form
+          </div>
+          <form action="" className="space-y-4 w-[40%] md:w-[60%] sm:w-[80%]">
+            <fieldset>
+              <input type="text" id="subject" required />
+              <label htmlFor="subject">Subject</label>
+            </fieldset>
+            <div className="flex justify-between sm:space-y-4 sm:flex-col">
+              <fieldset>
+                <input type="text" id="firstName" required />
+                <label htmlFor="firstName">First Name</label>
+              </fieldset>
+              <fieldset>
+                <input type="text" id="lastName" required />
+                <label htmlFor="lastName">Last Name</label>
+              </fieldset>
+            </div>
+            <fieldset>
+              <input type="email" id="email" required />
+              <label htmlFor="email">Email</label>
+            </fieldset>
+            <fieldset>
+              <input type="text" id="message" required />
+              <label htmlFor="message">Message</label>
+            </fieldset>
+            <button className="bg-purple-950 text-white px-4 pt-2 pb-1 rounded-lg">
+              Submit
+            </button>
+          </form>
         </section>
         {/* Fill Travel Form */}
         <EndTemplate
