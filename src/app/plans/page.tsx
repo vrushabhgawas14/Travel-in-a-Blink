@@ -25,9 +25,9 @@ export default function TravelPlans() {
             <div>Our Trips</div>
           </div>
           <div className="flex flex-wrap items-center justify-center p-8 h-auto w-full sm:flex-col">
-            {TripType.map((item) => (
+            {TripType.map((item, index) => (
               <Card
-                key={item.id}
+                key={index}
                 title={item.title}
                 image={item.image}
                 url={item.url}

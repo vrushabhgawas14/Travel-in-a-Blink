@@ -1,6 +1,6 @@
 export const ReviewsDetails = [
   {
-    key: 1,
+    id: 1,
     star: "*****",
     heading: "This Heading will be very long",
     msg: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea esse obcaecati enim aspernatur animi cupiditate velit possimus earum neque laboriosam!",
@@ -8,7 +8,7 @@ export const ReviewsDetails = [
     reviewDate: "October 10",
   },
   {
-    key: 2,
+    id: 2,
     star: "****",
     heading: "This Heading will be very long",
     msg: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea esse obcaecati enim aspernatur animi cupiditate velit possimus earum neque laboriosam!",
@@ -16,7 +16,7 @@ export const ReviewsDetails = [
     reviewDate: "March 15",
   },
   {
-    key: 3,
+    id: 3,
     star: "*****",
     heading: "This Heading will be very long",
     msg: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea esse obcaecati enim aspernatur animi cupiditate velit possimus earum neque laboriosam!",
@@ -24,7 +24,7 @@ export const ReviewsDetails = [
     reviewDate: "May 11",
   },
   {
-    key: 4,
+    id: 4,
     star: "**",
     heading: "This Heading will be very long",
     msg: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea esse obcaecati enim aspernatur animi cupiditate velit possimus earum neque laboriosam!",
@@ -32,7 +32,7 @@ export const ReviewsDetails = [
     reviewDate: "August 26",
   },
   {
-    key: 5,
+    id: 5,
     star: "****",
     heading: "This Heading will be very long",
     msg: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea esse obcaecati enim aspernatur animi cupiditate velit possimus earum neque laboriosam!",
@@ -40,7 +40,7 @@ export const ReviewsDetails = [
     reviewDate: "June 13",
   },
   {
-    key: 6,
+    id: 6,
     star: "*****",
     heading: "This Heading will be very long",
     msg: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea esse obcaecati enim aspernatur animi cupiditate velit possimus earum neque laboriosam!",
@@ -48,7 +48,7 @@ export const ReviewsDetails = [
     reviewDate: "December 6",
   },
   {
-    key: 7,
+    id: 7,
     star: "***",
     heading: "This Heading will be very long",
     msg: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea esse obcaecati enim aspernatur animi cupiditate velit possimus earum neque laboriosam!",

@@ -38,9 +38,9 @@ export default function Navbar() {
             isOpen ? "toggleNav firstHalf" : "sm:hidden"
           }`}
         >
-          {NavFirstHalf.map((item) => (
+          {NavFirstHalf.map((item, index) => (
             <Link
-              key={item.id}
+              key={index}
               href={item.url}
               onClick={() => setIsOpen(false)}
               className="border-2 border-transparent hover:border-b-Border-slate sm:border-none"
@@ -59,9 +59,9 @@ export default function Navbar() {
             isOpen ? "toggleNav secondHalf" : "sm:hidden"
           }`}
         >
-          {NavSecondHalf.map((item) => (
+          {NavSecondHalf.map((item, index) => (
             <Link
-              key={item.id}
+              key={index}
               href={item.url}
               onClick={() => setIsOpen(false)}
               className="border-2 border-transparent hover:border-b-Border-slate sm:border-none"

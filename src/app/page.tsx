@@ -64,9 +64,9 @@ export default function Home() {
             <div className="text-xl sm:text-lg">The kind of travel</div>
           </div>
           <div className="flex flex-wrap items-center justify-center p-4 h-auto w-full sm:flex-col">
-            {TripType.slice(0, 4).map((item) => (
+            {TripType.slice(0, 4).map((item, index) => (
               <Card
-                key={item.id}
+                key={index}
                 title={item.title}
                 image={item.image}
                 url={item.url}
@@ -108,10 +108,10 @@ export default function Home() {
                 id="slider"
                 className="overflow-x-scroll scroll-smooth flex py-4 gap-x-4 border-gray-400 border-2 border-x-0 mx-10 sm:mx-4"
               >
-                {ReviewsDetails.map((item) => (
+                {ReviewsDetails.map((item, index) => (
                   <ReviewBox
-                    key={item.key}
-                    id={item.key}
+                    key={index}
+                    id={item.id}
                     star={item.star}
                     heading={item.heading}
                     msg={item.msg}

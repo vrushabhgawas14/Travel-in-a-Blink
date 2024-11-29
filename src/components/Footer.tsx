@@ -22,10 +22,10 @@ export default function Footer() {
               Travel In A Blink
             </Link>
             <div className="flex items-center space-x-4 justify-center">
-              {Socials.map((item) => (
-                <Link key={item.key} href="#footer">
+              {Socials.map((item, index) => (
+                <Link key={index} href="#footer">
                   <Image
-                    key={item.key}
+                    key={index}
                     src={item.svg}
                     width={20}
                     height={20}
@@ -43,9 +43,9 @@ export default function Footer() {
           <div className="flex sm:flex-wrap items-start justify-evenly sm:justify-between lg:w-[60%] md:w-[50%] sm:mt-10">
             <div>
               <h1 className="text-3xl py-4">Learn</h1>
-              {LearnColumn.map((item) => (
+              {LearnColumn.map((item, index) => (
                 <Link
-                  key={item.key}
+                  key={index}
                   href={item.url}
                   className="flex flex-col py-2 text-xl underline"
                 >
@@ -56,9 +56,9 @@ export default function Footer() {
             {/* Explore */}
             <div>
               <h1 className="text-3xl py-4">Explore</h1>
-              {ExploreColumn.map((item) => (
+              {ExploreColumn.map((item, index) => (
                 <Link
-                  key={item.key}
+                  key={index}
                   href={item.url}
                   className="flex flex-col py-2 text-xl underline"
                 >
@@ -69,9 +69,9 @@ export default function Footer() {
             {/* Connect */}
             <div>
               <h1 className="text-3xl py-4">Connect</h1>
-              {ConnectColumn.map((item) => (
+              {ConnectColumn.map((item, index) => (
                 <Link
-                  key={item.key}
+                  key={index}
                   href={item.url}
                   className="flex flex-col py-2 text-xl underline"
                 >
@@ -96,9 +96,9 @@ export default function Footer() {
             .
           </div>
           <div className="space-x-4 flex items-center justify-center">
-            {PersonalSocials.map((item) => (
+            {PersonalSocials.map((item, index) => (
               <a
-                key={item.key}
+                key={index}
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"

@@ -19,9 +19,9 @@ export default function NeedAnything({ isWhite }: Props) {
           </div>
         </div>
         <form className="flex sm:flex-col">
-          {Forms.map((item) => (
+          {Forms.map((item, index) => (
             <input
-              key={item.key}
+              key={index}
               type={item.type}
               placeholder={item.placeholder}
               id={item.id}

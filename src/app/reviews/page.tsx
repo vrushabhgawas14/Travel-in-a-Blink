@@ -53,10 +53,10 @@ export default function Reviews() {
                 id="slider"
                 className="overflow-x-scroll scroll-smooth flex py-4 gap-x-4 border-gray-400 border-2 border-x-0 mx-10 sm:mx-4"
               >
-                {ReviewsDetails.map((item) => (
+                {ReviewsDetails.map((item, index) => (
                   <ReviewBox
-                    key={item.key}
-                    id={item.key}
+                    key={index}
+                    id={item.id}
                     star={item.star}
                     heading={item.heading}
                     msg={item.msg}

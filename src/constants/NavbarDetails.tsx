@@ -1,16 +1,13 @@
 export const NavFirstHalf = [
   {
-    id: 1,
     text: "ABOUT",
     url: "/about",
   },
   {
-    id: 2,
     text: "SERVICES",
     url: "/services",
   },
   {
-    id: 3,
     text: "TRAVEL PLANS",
     url: "/plans",
   },
@@ -18,17 +15,14 @@ export const NavFirstHalf = [
 
 export const NavSecondHalf = [
   {
-    id: 4,
     text: "REVIEWS",
     url: "/reviews",
   },
   {
-    id: 5,
     text: "FAQ",
     url: "/faq",
   },
   {
-    id: 6,
     text: "CONTACT",
     url: "/contact",
   },

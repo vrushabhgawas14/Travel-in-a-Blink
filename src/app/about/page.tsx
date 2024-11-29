@@ -69,13 +69,13 @@ export default function About() {
           </div>
           <div className="border-b-4 border-purple-950 w-[30%] md:w-[50%] sm:w-[70%]" />
           <div className="flex flex-wrap justify-center items-center">
-            {Teams.map((item) => (
+            {Teams.map((item, index) => (
               <div
-                key={item.key}
+                key={index}
                 className="text-center my-12 px-10 h-[60vh] md:h-[40vh] sm:h-[50vh]"
               >
                 <Image
-                  key={item.key}
+                  key={index}
                   src={item.img}
                   width="0"
                   height="0"
